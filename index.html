@@ -13,7 +13,7 @@
         }
 
         .container {
-            height: 100%;
+            min-height: 100%;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -22,11 +22,19 @@
             padding: 20px;
         }
 
-        .illustration {
-            max-width: 600px;
-            width: 90%;
-            height: auto;
+        .images {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            align-items: flex-end; /* PORAVNANJE PO DONJEM RUBU */
             margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .images img {
+            max-width: 350px;
+            width: 100%;
+            height: auto;
         }
 
         .title {
@@ -63,7 +71,11 @@
 </head>
 <body>
     <div class="container">
-        <img src="mf-ilu.png" alt="Ilustracija traktora" class="illustration">
+
+        <div class="images">
+            <img src="mf-ilu.png" alt="Traktor">
+            <img src="bager.png" alt="Bager">
+        </div>
 
         <div class="title">USKORO</div>
 
@@ -71,6 +83,7 @@
             Frezanje, iskopi, malčiranje, čišćenje terena na području Šibensko-kninske županije.
             <div class="phone">📞 +385 99 598 5413</div>
         </div>
+
     </div>
 </body>
 </html>
